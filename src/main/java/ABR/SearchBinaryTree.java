@@ -1,3 +1,5 @@
+package ABR;
+
 import java.util.AbstractCollection;
 import java.util.Collection;
 import java.util.Comparator;
@@ -18,12 +20,14 @@ import java.util.Iterator;
  * @param <E>
  *            le type des clés stockées dans l'arbre
  */
-public class ABR<E> extends AbstractCollection<E> {
+public class SearchBinaryTree<E> extends AbstractCollection<E> {
     private Noeud racine;
     private int taille;
     private Comparator<? super E> cmp;
 
     private class Noeud {
+        E cle;
+        Noeud gauche;private class Noeud {
         E cle;
         Noeud gauche;
         Noeud droit;
@@ -63,7 +67,7 @@ public class ABR<E> extends AbstractCollection<E> {
     /**
      * Crée un arbre vide. Les éléments sont ordonnés selon l'ordre naturel
      */
-    public ABR() {
+    public SearchBinaryTree() {
         // TODO
     }
 
@@ -74,7 +78,7 @@ public class ABR<E> extends AbstractCollection<E> {
      * @param cmp
      *            le comparateur utilisé pour définir l'ordre des éléments
      */
-    public ABR(Comparator<? super E> cmp) {
+    public SearchBinaryTree(Comparator<? super E> cmp) {
         // TODO
     }
 
@@ -85,7 +89,7 @@ public class ABR<E> extends AbstractCollection<E> {
      * @param c
      *            la collection à copier
      */
-    public ABR(Collection<? extends E> c) {
+    public SearchBinaryTree(Collection<? extends E> c) {
         // TODO
     }
 
